@@ -356,7 +356,7 @@ const INTERACTIVE_OBJECTS = [
  * @param {Object} lights - Light settings object
  */
 function Model({ setHovered, lights }) {
-  const { scene } = useGLTF('/glb/dor100.glb');
+  const { scene } = useGLTF(new URL('/glb/dor100.glb', import.meta.url).href, true);
   const interactiveObjects = useRef({});
   const modelRef = useRef();
   const rotationState = useRef({
