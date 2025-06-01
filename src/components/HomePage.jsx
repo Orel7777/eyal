@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const HomePage = ({ onLookCloser }) => {
   const [hover, setHover] = useState(false)
-
+// 
   const buttonStyle = {
     width: '410px',
     height: '128px',
